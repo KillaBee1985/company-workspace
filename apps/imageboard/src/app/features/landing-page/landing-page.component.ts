@@ -2,12 +2,6 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { TrendingService, SearchResult } from '../../core';
 import { Observable } from 'rxjs';
 
-interface SearchRequest {
-  loading?: boolean;
-  error?: any;
-  result: SearchResult;
-}
-
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',

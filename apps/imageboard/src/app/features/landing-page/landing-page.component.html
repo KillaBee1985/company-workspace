@@ -2,9 +2,13 @@
 <mat-grid-list
   [cols]="5"
   rowHeight="170px"
-  *ngIf="trending$ | async as trending"
+  *ngIf="trending$ | async as trending; else loadingTpl"
 >
   <mat-grid-tile *ngFor="let gif of trending.data">
     <img [src]="gif.images.original.url" alt="" />
   </mat-grid-tile>
 </mat-grid-list>
+
+<ng-template #loadingTpl>
+  <div class="loading">Loading...</div>
+</ng-template>
