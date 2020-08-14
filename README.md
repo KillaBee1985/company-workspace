@@ -9,3 +9,7 @@ Monorepo for different apps and librarries of [company-name]
 ## Libs
 
 - giphy-api - angular library to integrate with GiphyAPI
+
+### Imageboard
+
+to start an app `npm start` or `yarn star`
