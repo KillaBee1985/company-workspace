@@ -1,0 +1,9 @@
+mat-toolbar {
+  position: relative;
+  z-index: 1;
+
+  button {
+    margin-right: 16px;
+    outline: none;
+  }
+}

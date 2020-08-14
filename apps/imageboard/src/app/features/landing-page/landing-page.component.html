@@ -1,0 +1,10 @@
+<h2>Trending</h2>
+<mat-grid-list
+  [cols]="5"
+  rowHeight="170px"
+  *ngIf="trending$ | async as trending"
+>
+  <mat-grid-tile *ngFor="let gif of trending.data">
+    <img [src]="gif.images.original.url" alt="" />
+  </mat-grid-tile>
+</mat-grid-list>

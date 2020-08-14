@@ -1,0 +1,19 @@
+<ng-container *ngIf="search$ | async as search">
+  <ng-container *ngIf="search.loading">Loading....</ng-container>
+  <ng-container *ngIf="search.error"
+    >Oooops! Something went wrong :(</ng-container
+  >
+  <ng-container *ngIf="search.result as result">
+    <mat-grid-list [cols]="5" rowHeight="170px">
+      <mat-grid-tile *ngFor="let gif of result.data">
+        <img [src]="gif.images.original.url" alt="" />
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-paginator
+      [length]="result.pagination.total_count"
+      [pageSize]="25"
+      [pageIndex]="pageIndex$ | async"
+      (page)="updatePagination($event)"
+    ></mat-paginator>
+  </ng-container>
+</ng-container>

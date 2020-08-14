@@ -18,12 +18,7 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "NGViNzFkNTYtY2UxNS00OGJlLTgxMzMtMzM3YjE1MzcxZTlifHJlYWQtd3JpdGU=",
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
@@ -35,9 +30,10 @@
     },
     "imageboard-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "imageboard"
-      ]
+      "implicitDependencies": ["imageboard"]
+    },
+    "giphy-api": {
+      "tags": []
     }
   }
 }

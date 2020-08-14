@@ -1,0 +1,6 @@
+<form [formGroup]="searchForm" (submit)="search()">
+  <input type="text" formControlName="query" />
+  <button mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+</form>
