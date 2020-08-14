@@ -28,6 +28,6 @@ All routes in the application are lazy and preloaded because of preloading strat
 
 Types from `giphy-api` library are re-exported from app `core` module to reduce third-party library footprint on application. In case company decided to move from GIPHY to another image provider we will have single source of interfaces across application.
 
-I ntentionally did not write any tests to save some time for you and myself. I would be glad if you trust my word that I know how to do it.
+There are two test files `core/services/censoring.service.spec.ts` and `features/landing-page/landing-page.component.spec.ts`
 
 to start an app `npm start` or `yarn star`
