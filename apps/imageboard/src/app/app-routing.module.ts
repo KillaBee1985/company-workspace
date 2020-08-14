@@ -15,11 +15,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/search/search.module').then((m) => m.SearchModule),
   },
-  {
-    path: 'gif',
-    loadChildren: () =>
-      import('./features/gif/gif.module').then((m) => m.GifModule),
-  },
 ];
 
 @NgModule({
